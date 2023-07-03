@@ -1,0 +1,40 @@
+{
+    "flex": {
+      "flex": 1
+    },
+    "itemsCenter": {
+      "alignItems": "center"
+    },
+    "justifyCenter": {
+      "justifyContent": "center"
+    },
+    "wFull": {
+      "width": "100%"
+    },
+    "h40": {
+      "height": 40
+    },
+    "border": {
+      "borderWidth": 1,
+      "borderColor": "#ccc"
+    },
+    "m4": {
+      "margin": 16
+    },
+    "p2": {
+      "padding": 8
+    },
+    "bgRed500": {
+      "backgroundColor": "red"
+    },
+    "textWhite": {
+      "color": "white"
+    },
+    "mb4": {
+      "marginBottom": 16
+    },
+    "textRed500": {
+      "color": "red"
+    }
+}
+  
