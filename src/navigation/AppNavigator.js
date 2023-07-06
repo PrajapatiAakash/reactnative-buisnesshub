@@ -3,17 +3,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { useSelector } from 'react-redux';
 import LoginScreen from '../components/LoginScreen';
-// import HomeScreen from '../components/HomeScreen';
+import HomeScreen from '../components/HomeScreen';
+import Toast from 'react-native-toast-message';
 
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
-    //const user = useSelector((state) => state.auth.user);
+    const { isLoggedIn } = useSelector((state) => state.auth);
 
     return (
         <NavigationContainer>
           <Stack.Navigator>
-            {false ? (
+            {isLoggedIn ? (
               <Stack.Screen
                 name="Home"
                 component={HomeScreen}
@@ -27,6 +28,7 @@ const AppNavigator = () => {
               />
             )}
           </Stack.Navigator>
+          <Toast ref={(ref) => Toast.setRef(ref)} />
         </NavigationContainer>
     );
 };
